@@ -24,7 +24,10 @@
 
 - Círculo de aprendizado
 - Mentor também é aluno
-- Gamificação por experiência > PRINT
+- Gamificação por experiência
+
+// PRINT
+
 - Atingir graus mais altos te torna um mentor
 
 ## Colaboladores
