@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mentor_flutter/pages/detail_desafio/DetalheDesafio.dart';
 
 class Desafions extends StatelessWidget {
   @override
@@ -6,30 +7,32 @@ class Desafions extends StatelessWidget {
     return Container(
       child: ListView(
         children: <Widget>[
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
-          _buildItem(),
+          _buildItem(context),
+          _buildItem(context),
+          _buildItem(context),
+          _buildItem(context),
+          _buildItem(context),
+          _buildItem(context),
+          _buildItem(context),
         ],
       ),
     );
   }
 
-  _buildItem() {
+  _buildItem(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(5.0),
       child: Card(
         elevation: 4.0,
         child: InkWell(
           onTap: (){
+
+            Navigator
+                .of(context)
+                .push( MaterialPageRoute(builder: (BuildContext context)
+            {
+              return DetalheDesafio();
+            }));
 
           },
           child: Padding(
