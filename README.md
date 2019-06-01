@@ -7,26 +7,26 @@
 - Método de aprendizado contínuo
 - Modelo de aprendizagem por perguntas
 
-// PRINT
+![print](./doc/prints/7.png)
 
 - Nivelamento de conteúdo
 - Níveis de usuários (Mentores e alunos)
 
-// PRINT
+![print](./doc/prints/4.png)
 
 - Ranking de colaboração
 
-// PRINT
+![print](./doc/prints/6.png)
 
 - Ranking de alunos (Pontos resposta)
 
-// PRINT
+![print](./doc/prints/6.png)
 
 - Círculo de aprendizado
 - Mentor também é aluno
 - Gamificação por experiência
 
-// PRINT
+![print](./doc/prints/logo_menor.png)
 
 - Atingir graus mais altos te torna um mentor
 
