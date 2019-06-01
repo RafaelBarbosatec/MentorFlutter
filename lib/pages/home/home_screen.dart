@@ -17,7 +17,10 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       appBar: AppBar(title: Text(tittle),),
       drawer: _buildDrawer(context),
-      body: _buildBody(),
+      body: Container(
+        color: Colors.blueGrey[100],
+        child: _buildBody(),
+      ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: (){

@@ -7,50 +7,30 @@ class Ranking extends StatelessWidget {
     return Container(
       child: Column(
         children: <Widget>[
-          ListTile(
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person
-                )
-              ),
-              title: Text('1º Rafael Almeida'),
-              subtitle: Text('Professor')
-            ),
-
-            ListTile(
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person
-                )
-              ),
-              title: Text('2º Leandro Sena'),
-              subtitle: Text('Professor')
-            ),
-
-            ListTile(
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person
-                )
-              ),
-              title: Text('3º Henrique Souza'),
-              subtitle: Text('Aluno')
-            ),
-
-            ListTile(
-              leading: CircleAvatar(
-                child: Icon(
-                  Icons.person
-                )
-              ),
-              title: Text('4º Teo Teles'),
-              subtitle: Text('Aluno')
-            )
-
+          _buildCard('1º Rafael Almeida','Professor'),
+          _buildCard('2º Leandro Sena','Professor'),
+          _buildCard('3º Henrique Souza','Professor'),
+          _buildCard('4º Teo Teles','Aluno'),
         ],
       ),
     );
+  }
 
+  _buildCard(String name, String cat) {
+    return Padding(
+      padding: const EdgeInsets.only(left:5.0,right: 5.0, top: 4.0),
+      child: Card(
+        child: ListTile(
+            leading: CircleAvatar(
+                child: Icon(
+                    Icons.person
+                )
+            ),
+            title: Text(name),
+            subtitle: Text(cat)
+        ),
+      ),
+    );
   }
 }
 
