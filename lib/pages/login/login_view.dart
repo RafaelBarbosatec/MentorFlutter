@@ -2,6 +2,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:mentor_flutter/pages/primeiro_acesso/primeiro_acesso.dart';
 import 'package:mentor_flutter/support/Auth.dart';
 import 'package:mentor_flutter/support/util.dart';
 
@@ -44,6 +45,12 @@ class _LoginViewState extends State<LoginView> {
                     ),
                     child: _buildInnerButtonGoogle(),
                     onPressed: (){
+                      Navigator
+                          .of(context)
+                          .push( MaterialPageRoute(builder: (BuildContext context)
+                      {
+                        return PrimeiroAcesso();
+                      }));
 
                     },
                   ),
