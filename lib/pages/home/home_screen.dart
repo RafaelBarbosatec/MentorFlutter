@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mentor_flutter/pages/home/desafios/desafios.dart';
+import 'package:mentor_flutter/pages/ranking/ranking.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -107,6 +108,7 @@ class _HomeViewState extends State<HomeView> {
   _buildBody() {
     switch(indexselected){
       case 1 :return Desafions(); break;
+      case 3 :return Ranking(); break;
       default: return Container();
     }
   }
