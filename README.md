@@ -4,8 +4,8 @@
 
 ## Colaboladores
 
-- Henrique Menezes
-- Leandro Sena
-- Rafael Almeida
-- Téogenes Teles
-- João Paulo Santos
+- [ Rafael Almeida](https://github.com/RafaelBarbosatec)
+- [ Téogenes Teles](https://github.com/teocteles)
+- [ Henrique Menezes](https://github.com/HenriqueMachine)
+- [ Leandro Sena](https://github.com/leosena777)
+- [ João Paulo Santos](https://github.com/joaopaulons)
