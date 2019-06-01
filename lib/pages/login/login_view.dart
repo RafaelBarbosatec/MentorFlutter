@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -17,23 +16,16 @@ class _LoginViewState extends State<LoginView> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: new LinearGradient(
-            colors: [ColorFromHex(code: "#54c5f8"), ColorFromHex(code: "#01579b")],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter
-          ),
+          gradient: new LinearGradient(colors: [
+            ColorFromHex(code: "#54c5f8"),
+            ColorFromHex(code: "#01579b")
+          ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
         ),
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text("Flutter Mentor",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white
-                ),
-              ),
+              Image.asset('assets/logo_menor.png'),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: SizedBox(
@@ -42,17 +34,13 @@ class _LoginViewState extends State<LoginView> {
                   child: RaisedButton(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))
-                    ),
+                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
                     child: _buildInnerButtonGoogle(),
-                    onPressed: (){
-                      Navigator
-                          .of(context)
-                          .push( MaterialPageRoute(builder: (BuildContext context)
-                      {
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (BuildContext context) {
                         return PrimeiroAcesso();
                       }));
-
                     },
                   ),
                 ),
@@ -68,20 +56,17 @@ class _LoginViewState extends State<LoginView> {
     return Row(
       children: <Widget>[
         Image.asset(
-            'assets/logo_google.png',
+          'assets/logo_google.png',
           height: 20,
         ),
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: Text(
-              "Login com Google",
-            style: TextStyle(
-              color: Colors.grey[600]
-            ),
+            "Login com Google",
+            style: TextStyle(color: Colors.grey[600]),
           ),
         )
       ],
     );
   }
-
 }

@@ -24,7 +24,7 @@ class PrimeiroAcesso extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(30.0),
                 child: Text(
-                    "Qual seu nível de conhecimento com flutter?",
+                    "Qual seu nível de conhecimento com Flutter?",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class PrimeiroAcesso extends StatelessWidget {
               _buildButton(context,"Expert",(){
                 _goBemVindo(context);
               }),
-              _buildButton(context,"Banjo",(){
+              _buildButton(context,"Manjo",(){
                 _goBemVindo(context);
               }),
               _buildButton(context,"Já brinquei",(){
