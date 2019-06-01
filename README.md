@@ -4,6 +4,7 @@
 
 ## Colaboladores
 
+- Henrique Menezes
 - Leandro Sena
 - Rafael Almeida
 - Téogenes Teles
