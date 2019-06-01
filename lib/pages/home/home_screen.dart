@@ -10,11 +10,12 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
 
   int indexselected = 1;
+  String tittle = "Flutter Mentor";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flutter Mentor"),),
+      appBar: AppBar(title: Text(tittle),),
       drawer: _buildDrawer(context),
       body: _buildBody(),
     );
@@ -59,14 +60,9 @@ class _HomeViewState extends State<HomeView> {
               _buildItem(context,1, "Home",(){
 
               }),
-              _buildItem(context,2, "Desafions",(){
-
+              _buildItem(context,2, "Ranking",(){
               }),
-              _buildItem(context,3, "Ranking",(){
-
-              }),
-              _buildItem(context,4, "Sair",(){
-
+              _buildItem(context,3, "Sair",(){
               })
             ],
           ),
@@ -83,6 +79,7 @@ class _HomeViewState extends State<HomeView> {
         onTap: (){
           setState(() {
             indexselected = index;
+            _changeTittle(index);
           });
           click();
           Navigator.pop(context);
@@ -108,8 +105,16 @@ class _HomeViewState extends State<HomeView> {
   _buildBody() {
     switch(indexselected){
       case 1 :return Desafions(); break;
-      case 3 :return Ranking(); break;
+      case 2 :return Ranking(); break;
+      case 3 : Navigator.pop(context); break;
       default: return Container();
+    }
+  }
+
+  void _changeTittle(int i) {
+    switch(i){
+      case 2: tittle = "Ranking"; break;
+      default: tittle = "Flutter Mentor"; break;
     }
   }
 
