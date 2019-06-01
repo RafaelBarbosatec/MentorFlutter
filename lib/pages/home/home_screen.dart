@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mentor_flutter/pages/home/desafios/desafios.dart';
+import 'package:mentor_flutter/pages/ranking/ranking.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -57,13 +58,11 @@ class _HomeViewState extends State<HomeView> {
                 color: Colors.grey,
               ),
               _buildItem(context,1, "Home",(){
-                _changeTittle(1);
+
               }),
               _buildItem(context,2, "Ranking",(){
-                _changeTittle(2);
               }),
               _buildItem(context,3, "Sair",(){
-                _changeTittle(3);
               })
             ],
           ),
@@ -80,6 +79,7 @@ class _HomeViewState extends State<HomeView> {
         onTap: (){
           setState(() {
             indexselected = index;
+            _changeTittle(index);
           });
           click();
           Navigator.pop(context);
@@ -105,18 +105,17 @@ class _HomeViewState extends State<HomeView> {
   _buildBody() {
     switch(indexselected){
       case 1 :return Desafions(); break;
+      case 2 :return Ranking(); break;
       case 3 : Navigator.pop(context); break;
       default: return Container();
     }
   }
 
   void _changeTittle(int i) {
-    setState(() {
-      switch(i){
-        case 2: tittle = "Ranking"; break;
-        default: tittle = "Flutter Mentor"; break;
-      }
-    });
+    switch(i){
+      case 2: tittle = "Ranking"; break;
+      default: tittle = "Flutter Mentor"; break;
+    }
   }
 
 }
