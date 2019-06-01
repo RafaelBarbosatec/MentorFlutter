@@ -4,31 +4,35 @@
 
 ## Tópicos que o aplicativo aborda
 
-- Método de aprendizado contínuo
-- Modelo de aprendizagem por perguntas
+### - Método de aprendizado contínuo
 
-![print](./doc/prints/7.png)
+### - Modelo de aprendizagem por perguntas
 
-- Nivelamento de conteúdo
-- Níveis de usuários (Mentores e alunos)
+<img src="./doc/prints/7.jpg" height="600" >
 
-![print](./doc/prints/4.png)
+### - Nivelamento de conteúdo
 
-- Ranking de colaboração
+### - Níveis de usuários (Mentores e alunos)
 
-![print](./doc/prints/6.png)
+<img src="./doc/prints/4.jpg" height="600" >
 
-- Ranking de alunos (Pontos resposta)
+### - Ranking de colaboração
 
-![print](./doc/prints/6.png)
+<img src="./doc/prints/6.jpg" height="600" >
 
-- Círculo de aprendizado
-- Mentor também é aluno
-- Gamificação por experiência
+### - Ranking de alunos (Pontos resposta)
 
-![print](./doc/prints/logo_menor.png)
+<img src="./doc/prints/6.jpg" height="600" >
 
-- Atingir graus mais altos te torna um mentor
+### - Círculo de aprendizado
+
+### - Mentor também é aluno
+
+### - Gamificação por experiência
+
+### - Atingir graus mais altos te torna um mentor
+
+<img src="./doc/prints/4.jpg" height="600" >
 
 ## Colaboladores
 
