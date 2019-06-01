@@ -18,6 +18,12 @@ class _HomeViewState extends State<HomeView> {
       appBar: AppBar(title: Text(tittle),),
       drawer: _buildDrawer(context),
       body: _buildBody(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: (){
+          
+        },
+      ),
     );
   }
 
