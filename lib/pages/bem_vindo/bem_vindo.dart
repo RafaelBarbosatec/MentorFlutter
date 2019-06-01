@@ -21,9 +21,19 @@ class BemVindoView extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              Text("Bem vindo\nao\nFlutter mentor!",
-                textAlign: TextAlign.center,
-
+              Container(
+                margin: EdgeInsets.only(bottom: 50.0),
+                child: Text("Bem vindo\nAo\nFlutter mentor!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 50.0),
+                child: Text("Seu conhecimento vale mais do que você!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18.0),
+                ),
               ),
               _buildButton(context)
             ],
