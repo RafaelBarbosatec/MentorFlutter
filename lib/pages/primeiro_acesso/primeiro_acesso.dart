@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:mentor_flutter/pages/bem_vindo/bem_vindo.dart';
 import 'package:mentor_flutter/support/util.dart';
 
 class PrimeiroAcesso extends StatelessWidget {
@@ -32,16 +33,16 @@ class PrimeiroAcesso extends StatelessWidget {
                 ),
               ),
               _buildButton(context,"Expert",(){
-
+                _goBemVindo(context);
               }),
               _buildButton(context,"Banjo",(){
-
+                _goBemVindo(context);
               }),
               _buildButton(context,"Já brinquei",(){
-
+                _goBemVindo(context);
               }),
               _buildButton(context,"Quero conhecer",(){
-
+                _goBemVindo(context);
               })
             ],
           ),
@@ -68,5 +69,14 @@ class PrimeiroAcesso extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _goBemVindo(BuildContext context) {
+    Navigator
+        .of(context)
+        .push( MaterialPageRoute(builder: (BuildContext context)
+    {
+      return BemVindoView();
+    }));
   }
 }
