@@ -38,6 +38,7 @@ class _LoginViewState extends State<LoginView> {
                 padding: const EdgeInsets.all(20.0),
                 child: SizedBox(
                   width: 180.0,
+                  height: 40.0,
                   child: RaisedButton(
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
