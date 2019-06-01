@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:mentor_flutter/pages/home/home_screen.dart';
 import 'package:mentor_flutter/support/util.dart';
 
 class BemVindoView extends StatelessWidget {
@@ -23,11 +24,39 @@ class BemVindoView extends StatelessWidget {
               Text("Bem vindo\nao\nFlutter mentor!",
                 textAlign: TextAlign.center,
 
-              )
+              ),
+              _buildButton(context)
             ],
           ),
         ),
       ),
     );
+  }
+
+  _buildButton(BuildContext context) {
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 15.0,left: 30.0, right: 30.0),
+      child: SizedBox(
+        width: double.maxFinite,
+        height: 40.0,
+        child: RaisedButton(
+          color: Colors.white,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20.0))
+          ),
+          child: Text("GO"),
+          onPressed: (){
+            Navigator
+                .of(context)
+                .pushReplacement( MaterialPageRoute(builder: (BuildContext context)
+            {
+              return HomeView();
+            }));
+          },
+        ),
+      ),
+    );
+
   }
 }
